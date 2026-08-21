@@ -49,6 +49,28 @@ textarea {
   font: inherit;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  a,
+  button,
+  input,
+  textarea,
+  [role="button"] {
+    cursor: none;
+  }
+}
+
+.sovia-cursor {
+  color: var(--petroleum);
+}
+
+.sovia-cursor.-pointer {
+  color: var(--accent-wine);
+}
+
+.sovia-cursor.-pointer:before {
+  transform: scale(0.32);
+}
+
 a {
   color: inherit;
   text-decoration: none;

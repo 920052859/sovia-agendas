@@ -8,7 +8,9 @@ import {
   Outfit,
   Playfair_Display,
 } from "next/font/google";
+import "mouse-follower/dist/mouse-follower.min.css";
 import "./globals.css";
+import CustomCursor from "./components/CustomCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -93,6 +95,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${cormorant.variable} ${fraunces.variable} ${outfit.variable} ${bebas.variable} antialiased`}
       >
+        <CustomCursor />
         {children}
       </body>
     </html>
