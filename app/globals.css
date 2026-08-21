@@ -50,12 +50,8 @@ textarea {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  a,
-  button,
-  input,
-  textarea,
-  [role="button"] {
-    cursor: none;
+  * {
+    cursor: none !important;
   }
 }
 
