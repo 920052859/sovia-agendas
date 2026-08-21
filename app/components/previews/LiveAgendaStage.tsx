@@ -153,7 +153,7 @@ export default function LiveAgendaStage({ stage }: { stage: SceneKey }) {
                         {["💼", "🌿", "💰", "🎯", "🎨", "🤍"].map((icon, index) => (
                           <span
                             key={index}
-                            style={{ background: `color-mix(in srgb, var(--accent) ${10 + index * 4}%, #fffdf8)` }}
+                            style={{ background: `color-mix(in srgb, var(--accent) ${10 + index * 4}%, #f8fbfc)` }}
                           >
                             {icon}
                           </span>

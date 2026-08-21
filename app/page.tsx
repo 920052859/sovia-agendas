@@ -7,7 +7,7 @@ import LiveStudio from "./components/LiveStudio";
 export default function Home() {
   return (
     <ConfiguratorProvider>
-      <main className="min-h-screen bg-[#faf6f0] text-[#2a2521]">
+      <main className="min-h-screen bg-[#f8fbfc] text-[#102e3b]">
         <Hero />
         <LiveStudio />
       </main>

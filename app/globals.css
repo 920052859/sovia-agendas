@@ -10,7 +10,7 @@
   --accent-emerald: #063b52;
   --deep-navy: #022b3d;
   --petroleum: #063b52;
-  --paper: #ffffff;
+  --paper: #f8fbfc;
   --hairline: rgba(6, 59, 82, 0.14);
 }
 
@@ -402,7 +402,7 @@ blockquote {
 
 .panel,
 .chat-panel {
-  background: #ffffff;
+  background: #f8fbfc;
   border-radius: 8px;
   padding: clamp(1.1rem, 3vw, 2rem);
 }
@@ -609,7 +609,7 @@ legend {
 }
 
 .question-card {
-  background: #ffffff;
+  background: #f8fbfc;
   border: 1px solid rgba(6, 59, 82, 0.12);
   border-radius: 8px;
   box-shadow: 0 20px 60px rgba(6, 59, 82, 0.08);
@@ -768,7 +768,7 @@ textarea {
 }
 
 .layout-card {
-  background: #ffffff;
+  background: #f8fbfc;
   border: 1px solid rgba(6, 59, 82, 0.14);
   border-radius: 8px;
   cursor: pointer;
@@ -808,7 +808,7 @@ textarea {
 }
 
 .pack-card {
-  background: #ffffff;
+  background: #f8fbfc;
   border: 1px solid rgba(6, 59, 82, 0.14);
   border-radius: 8px;
   cursor: pointer;
@@ -856,7 +856,7 @@ textarea {
 
 .checkout-strip {
   align-items: center;
-  background: #ffffff;
+  background: #f8fbfc;
   border: 1px solid rgba(6, 59, 82, 0.12);
   border-radius: 8px;
   display: flex;
@@ -885,7 +885,7 @@ textarea {
 }
 
 .order-card {
-  background: #ffffff;
+  background: #f8fbfc;
   border: 1px solid rgba(6, 59, 82, 0.12);
   border-radius: 8px;
   box-shadow: 0 24px 70px rgba(6, 59, 82, 0.12);
@@ -1041,7 +1041,7 @@ textarea {
 }
 
 .book-spread {
-  background: #ffffff;
+  background: #f8fbfc;
   border: 1px solid rgba(6, 59, 82, 0.14);
   border-radius: 8px;
   box-shadow: 0 24px 70px rgba(6, 59, 82, 0.14);
@@ -1547,7 +1547,7 @@ textarea {
 }
 
 .seal-silver {
-  background: linear-gradient(135deg, #f2f4f6, #9aa2ab 45%, #ffffff);
+  background: linear-gradient(135deg, #f2f4f6, #9aa2ab 45%, #f8fbfc);
   box-shadow: 0 2px 6px rgba(60, 60, 65, 0.3);
   color: #2a2d31;
 }
@@ -1624,7 +1624,7 @@ textarea {
 }
 
 .template-card {
-  background: #ffffff;
+  background: #f8fbfc;
   border: 1px solid rgba(6, 59, 82, 0.14);
   border-radius: 8px;
   cursor: pointer;
@@ -1743,7 +1743,7 @@ textarea {
 
 .swatch-btn {
   background: var(--swatch);
-  border: 3px solid #ffffff;
+  border: 3px solid #f8fbfc;
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(6, 59, 82, 0.18);
   cursor: pointer;
@@ -1778,7 +1778,7 @@ textarea {
 
 .sticker-chip {
   align-items: center;
-  background: #ffffff;
+  background: #f8fbfc;
   border: 1px solid rgba(6, 59, 82, 0.14);
   border-left: 4px solid var(--chip-color, #27c9d4);
   border-radius: 6px;
@@ -1816,7 +1816,7 @@ textarea {
 
 .calendar-preview {
   --accent: #27c9d4;
-  background: #ffffff;
+  background: #f8fbfc;
   border: 1px solid rgba(6, 59, 82, 0.14);
   border-radius: 10px;
   box-shadow: 0 24px 60px rgba(6, 59, 82, 0.1);
@@ -1910,7 +1910,7 @@ textarea {
 }
 
 .calendar-ilustrado {
-  background: linear-gradient(160deg, #ffffff, color-mix(in srgb, var(--accent) 10%, white));
+  background: linear-gradient(160deg, #f8fbfc, color-mix(in srgb, var(--accent) 10%, white));
 }
 
 /* ---------- Vision board ---------- */
@@ -1933,7 +1933,7 @@ textarea {
 
 .vision-board {
   --accent: #27c9d4;
-  background: #ffffff;
+  background: #f8fbfc;
   border: 1px solid rgba(6, 59, 82, 0.14);
   border-radius: 10px;
   box-shadow: 0 24px 60px rgba(6, 59, 82, 0.1);
@@ -2000,7 +2000,7 @@ textarea {
 }
 
 .vision-minimal-collage .vision-tile {
-  background: #ffffff;
+  background: #f8fbfc;
   border: 1px solid rgba(6, 59, 82, 0.14);
 }
 

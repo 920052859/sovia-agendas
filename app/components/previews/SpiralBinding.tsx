@@ -20,7 +20,7 @@ export default function SpiralBinding({ color, loops = 20 }: { color: string; lo
           <stop offset="0%" stopColor={color} stopOpacity="0.55" />
           <stop offset="35%" stopColor="#fff" stopOpacity="0.9" />
           <stop offset="55%" stopColor={color} stopOpacity="1" />
-          <stop offset="100%" stopColor="#2d2924" stopOpacity="0.55" />
+          <stop offset="100%" stopColor="#063b52" stopOpacity="0.55" />
         </linearGradient>
       </defs>
       {Array.from({ length: loops }).map((_, index) => {
