@@ -128,11 +128,45 @@ a {
 .hero-band {
   min-height: 94vh;
   min-height: 94svh;
-  background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.86), rgba(248, 251, 252, 0.74)),
-    radial-gradient(circle at 82% 18%, rgba(39, 201, 212, 0.16), transparent 34%),
-    radial-gradient(circle at 8% 92%, rgba(85, 224, 194, 0.12), transparent 30%),
-    #f8fbfc;
+  background: #f8fbfc;
+  position: relative;
+}
+
+.hero-canvas-wrap {
+  inset: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+
+.hero-canvas {
+  display: block;
+  filter: blur(38px) saturate(118%);
+  height: 100%;
+  opacity: 0.55;
+  width: 100%;
+}
+
+.hero-scrim {
+  background: linear-gradient(
+    100deg,
+    rgba(248, 251, 252, 0.94) 0%,
+    rgba(248, 251, 252, 0.72) 38%,
+    rgba(248, 251, 252, 0.35) 62%,
+    rgba(248, 251, 252, 0.55) 100%
+  );
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.hero-band > .top-nav {
+  z-index: 61;
+}
+
+.hero-band > div.mx-auto {
+  position: relative;
+  z-index: 2;
 }
 
 .brand-mark {

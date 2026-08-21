@@ -6,6 +6,7 @@ import { useStore } from "../context/store";
 import { gsap, ScrollTrigger } from "../lib/gsap";
 import TopNav from "./TopNav";
 import InteractiveBook from "./previews/InteractiveBook";
+import HeroCanvas from "./HeroCanvas";
 
 export default function Hero() {
   const { t } = useStore();
@@ -53,6 +54,8 @@ export default function Hero() {
 
   return (
     <section className="hero-band" ref={heroRef}>
+      <HeroCanvas />
+      <div className="hero-scrim" aria-hidden="true" />
       <TopNav />
 
       <div className="mx-auto grid max-w-7xl gap-10 px-5 pb-14 pt-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
