@@ -158,6 +158,18 @@ h2 em {
   font-style: italic;
 }
 
+.word-mask {
+  display: inline-block;
+  margin-right: 0.24em;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.word-reveal {
+  display: inline-block;
+  will-change: transform;
+}
+
 h2 {
   font-size: clamp(1.9rem, 4vw, 3.4rem);
   line-height: 1.05;

@@ -11,6 +11,10 @@ export default function Hero() {
   const { t } = useStore();
   const heroRef = useRef<HTMLElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+
+  const titleMainWords = t("hero.titleMain").split(" ");
+  const titleAccentWords = t("hero.titleAccent").split(" ");
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -26,6 +30,22 @@ export default function Hero() {
           scrub: 0.6,
         },
       });
+
+      if (titleRef.current) {
+        const words = titleRef.current.querySelectorAll(".word-reveal");
+        gsap.set(words, { yPercent: 110 });
+        gsap.to(words, {
+          yPercent: 0,
+          duration: 0.9,
+          ease: "power4.out",
+          stagger: 0.055,
+          scrollTrigger: {
+            trigger: titleRef.current,
+            start: "top 90%",
+            once: true,
+          },
+        });
+      }
     }, heroRef);
 
     return () => ctx.revert();
@@ -43,8 +63,19 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
         >
           <p className="eyebrow">{t("hero.eyebrow")}</p>
-          <h1>
-            {t("hero.titleMain")} <em>{t("hero.titleAccent")}</em>
+          <h1 ref={titleRef} className="title-reveal">
+            {titleMainWords.map((word, index) => (
+              <span className="word-mask" key={`main-${index}`}>
+                <span className="word-reveal">{word}</span>
+              </span>
+            ))}{" "}
+            <em>
+              {titleAccentWords.map((word, index) => (
+                <span className="word-mask" key={`accent-${index}`}>
+                  <span className="word-reveal">{word}</span>
+                </span>
+              ))}
+            </em>
           </h1>
           <p className="lead">{t("hero.lead")}</p>
           <div className="hero-feature-row">
