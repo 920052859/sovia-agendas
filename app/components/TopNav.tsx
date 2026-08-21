@@ -1,10 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import { useStore } from "../context/store";
 import SoviaMark from "./SoviaMark";
 
 export default function TopNav() {
   const { state, update, t } = useStore();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-5 top-nav">
@@ -12,14 +16,37 @@ export default function TopNav() {
         <SoviaMark size={30} />
         <span>SoVia</span>
       </div>
-      <div className="hidden items-center gap-6 text-sm font-medium md:flex nav-links">
-        <a href="#">{t("nav.home")}</a>
-        <a href="#disenos">{t("nav.templates")}</a>
-        <a href="#stickers">{t("nav.calendar")}</a>
-        <a href="#fisico">{t("nav.physical")}</a>
-        <a href="#personalizador">{t("nav.customize")}</a>
-        <a href="#pedido">{t("nav.about")}</a>
+      <div className={menuOpen ? "nav-links nav-links-open" : "nav-links"}>
+        <a href="#" onClick={closeMenu}>
+          {t("nav.home")}
+        </a>
+        <a href="#disenos" onClick={closeMenu}>
+          {t("nav.templates")}
+        </a>
+        <a href="#stickers" onClick={closeMenu}>
+          {t("nav.calendar")}
+        </a>
+        <a href="#fisico" onClick={closeMenu}>
+          {t("nav.physical")}
+        </a>
+        <a href="#personalizador" onClick={closeMenu}>
+          {t("nav.customize")}
+        </a>
+        <a href="#pedido" onClick={closeMenu}>
+          {t("nav.about")}
+        </a>
       </div>
+      <button
+        aria-expanded={menuOpen}
+        aria-label="Menu"
+        className={menuOpen ? "nav-toggle nav-toggle-open" : "nav-toggle"}
+        onClick={() => setMenuOpen((open) => !open)}
+        type="button"
+      >
+        <span />
+        <span />
+        <span />
+      </button>
       <div className="nav-controls">
         <div className="pill-toggle" role="group" aria-label="Idioma">
           <button
